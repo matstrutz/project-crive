@@ -4,29 +4,10 @@
   inherits: false;
 }
 
-:root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
-
-body {
-  min-height: 100vh;
-  background: #212534;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-
 .card {
   background: #191c29;
   width: var(--card-width);
   height: var(--card-height);
-  padding: 3px;
   position: relative;
   border-radius: 6px;
   justify-content: center;
@@ -84,10 +65,20 @@ body {
 
 @keyframes spin {
   0% {
-    --rotate: 0deg;
+      --rotate: 0deg;
   }
 
   100% {
-    --rotate: 360deg;
+      --rotate: 360deg;
   }
+}
+
+.card-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: var(--card-width);
+  height: var(--card-height);
 }
