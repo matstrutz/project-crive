@@ -58,9 +58,9 @@
     animation: spin 2.5s linear infinite;
   }
 
-  &.limited::before,&.limited::after {
-    background-image: linear-gradient(var(--rotate), #6bfff8, #271ae2 43%, #990c6f);
-  }
+  // &.limited::before,&.limited::after {
+  //   background-image: linear-gradient(var(--rotate), #6bfff8, #271ae2 43%, #990c6f);
+  // }
 
   &.special::before,&.special::after {
     background-image: linear-gradient(var(--rotate), #fff56b, #dfe21a 43%, #99900c);
