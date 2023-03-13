@@ -1,52 +1,6 @@
-<div class="grid-container">
-    <div>
-        <div class="card legendary">
-            Lendaria
-        </div>
-    </div>
-    <div>
-        <div class="card rare">
-            Rara
-        </div>
-    </div>
-    <div>
-        <div class="card epic">
-            Epica
-        </div>
-    </div>
-    <div>
-        <div class="card mythic">
-            Mitica
-        </div>
-    </div>
-    <div>
-        <div class="card uncommon">
-            Incomun
-        </div>
-    </div>
-    <div>
-        <div class="card common">
-            Comun
-        </div>
-    </div>
-    <div>
-        <div class="card special">
-            Especial
-        </div>
-    </div>
-    <div>
-        <div class="card common">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card common">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card common">
-            Magic Card
+<div class="grid-container" [ngClass]="booster">
+    <div *ngFor="let b of booster">
+        <div class="card {{b}}">
         </div>
     </div>
 </div>

@@ -14,32 +14,22 @@ export class BoosterOpenComponent implements OnInit {
   }
 
   calcularDropBasic(booster: any[]) {
-    for (let index = 0; index < booster.length; index++) {
-      const element = booster[index];
+    for (let i = 0; i < booster.length; i++) {
+      let result: number = Math.floor(Math.random() * 100) + 1;
+
+      if (result < 5) {
+        booster[i] = "mythic";
+      } else if (result < 10) {
+        booster[i] = "legendary";
+      } else if (result < 20) {
+        booster[i] = "epic";
+      } else if (result < 50) {
+        booster[i] = "rare";
+      } else if (result < 60) {
+        booster[i] = "uncommon";
+      } else {
+        booster[i] = "common"
+      }
     }
-  }
-
-  primeiroDrop(value: number){
-    if(value < 3){
-
-    }
-    
-    if(value < 10) {
-
-    }
-
-    
-  }
-
-  segundoDrop(value: number){
-
-  }
-
-  terceiroQuintoDrop(value: number){
-
-  }
-
-  sextoDecimoDrop(value: number){
-
   }
 }
