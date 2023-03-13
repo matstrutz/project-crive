@@ -1,52 +1,6 @@
-<div class="grid-container">
-    <div>
-        <div class="card rare">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card legendary">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
-        </div>
-    </div>
-    <div>
-        <div class="card">
-            Magic Card
+<div class="grid-container" [ngClass]="booster">
+    <div *ngFor="let b of booster">
+        <div class="card {{b}}">
         </div>
     </div>
 </div>

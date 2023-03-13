@@ -19,8 +19,10 @@ const routes: Routes = [
     HomeComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes)
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})
   ],
   exports: [
     RouterModule

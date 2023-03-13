@@ -58,12 +58,36 @@
     animation: spin 2.5s linear infinite;
   }
 
+  // &.limited::before,&.limited::after {
+  //   background-image: linear-gradient(var(--rotate), #6bfff8, #271ae2 43%, #990c6f);
+  // }
+
+  &.special::before,&.special::after {
+    background-image: linear-gradient(var(--rotate), #fff56b, #dfe21a 43%, #99900c);
+  }
+
+  &.mythic::before,&.mythic::after {
+    background-image: linear-gradient(var(--rotate), #ff7856, #e05a48 43%, #ff0000);
+  }
+
   &.legendary::before,&.legendary::after {
-    background-image: linear-gradient(var(--rotate), #fcd173, #e06e22 43%, #ff5100);
+    background-image: linear-gradient(var(--rotate), #ffb24e, #da8d28 43%, #ff7300);
+  }
+
+  &.epic::before,&.epic::after {
+    background-image: linear-gradient(var(--rotate), #ff5dce, #b624c4 43%, #d400ff);
   }
 
   &.rare::before,&.rare::after {
-    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #0d00c2);
+  }
+
+  &.uncommon::before,&.uncommon::after {
+    background-image: linear-gradient(var(--rotate), #4df571, #2ad146 43%, #08fd00);
+  }
+
+  &.common::before,&.common::after {
+    background-image: linear-gradient(var(--rotate), #ffffff, #b3b3b3 43%, #6c7570);
   }
 }
 
