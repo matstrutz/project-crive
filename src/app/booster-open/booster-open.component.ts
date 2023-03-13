@@ -8,9 +8,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class BoosterOpenComponent implements OnInit {
 
   booster: any[] = new Array(10);
+  open: boolean = false;
 
   ngOnInit(): void {
-    this.calcularDropBasic(this.booster);
   }
 
   calcularDropBasic(booster: any[]) {
@@ -31,5 +31,10 @@ export class BoosterOpenComponent implements OnInit {
         booster[i] = "common"
       }
     }
+  }
+
+  dealCards(){
+    this.open = true;
+    this.calcularDropBasic(this.booster);
   }
 }
