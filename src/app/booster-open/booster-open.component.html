@@ -1,12 +1,13 @@
 <div *ngIf="!open" class="main-booster">
     <div>
-        <a class="card booster-display" (click)="dealCards()">
+        <a class="card booster-display" (click)="abrirBooster()">
         </a>
     </div>
 </div>
-<div *ngIf="open" class="grid-container" [ngClass]="booster">
-    <div *ngFor="let b of booster">
-        <div class="card {{b}}">
+<div *ngIf="open" class="grid-container" >
+    <div *ngFor="let b of booster; let i = index">
+        <div [ngClass]=[b] (click)="removerAnimacao(i)">
+            Test
         </div>
     </div>
 </div>
